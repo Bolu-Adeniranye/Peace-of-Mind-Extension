@@ -15,9 +15,6 @@ html, body {
 /* Body CSS */
 body {
     background: no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 2px 0px 20px #eceaea;
