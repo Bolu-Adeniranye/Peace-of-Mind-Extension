@@ -1,12 +1,12 @@
 
 /* HTML AND BODY CSS */
-html, body {
+html, body, * {
     margin: 0;
     padding: 0;
     color: white;
     box-sizing: border-box;
 
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
 }
 
 
@@ -18,10 +18,12 @@ body {
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 2px 0px 20px #eceaea;
+    background-color: rgba(0, 0, 0, 0.377);
+    background-blend-mode: darken;
 }
 
 main {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -30,44 +32,24 @@ main {
 div.top {
     display: flex;
     justify-content: space-between;
+    padding: 10px;
+    height: 120px;
 }
 
-h1#time{
-    /* border: 2px solid red; */
-    text-align: center;
-}
 
-div#crypto {
+div#crypto, div#weather {
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 35px;
-
-    margin-top:40px;
-    margin-left: 25px;
-
-    font-size: 25px;
+    font-size: 1rem;
     font-weight: 600;
     color: rgb(255, 255, 255);
     -webkit-text-stroke-width: 0.3px;
-  -webkit-text-stroke-color: rgba(255, 255, 255, 0.678);
-
-    
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.678); 
     /* border: 2px solid red; */
 }
-
-div#crypto > span {
-    margin-left: 10px;
-    text-align: center;
-}
-
-div#crypto-top {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-}
-
 
 h1#time {
     /* border: 3px solid blue; */
@@ -76,16 +58,13 @@ h1#time {
     font-size: 90px;
     position: absolute;
 }
-div#weather {
-    margin-right: 20px;
-}
+
 div#weather > img {
     width: 70px;
 }
 
 p.weather-city {
     width: 100%;
-    text-align: right;
     margin: 0;
 }
 
